@@ -1,12 +1,9 @@
 from __future__ import division
 import sys
 import networkx as nx
-from copy import copy, deepcopy
 import numpy as np
 from scipy.stats import bernoulli
-from scipy.optimize import linprog
-import random
-from random import random as rnd, randint as rndi
+from random import random
 from math import log10, sqrt
 import matplotlib.pyplot as plt
 from time import time
@@ -63,7 +60,7 @@ def CALC_LOSS(x, plot=False):
 def SAMPLE(q):
     ''' @param q: a proposal distribution of independent Bernoulli's. '''
     
-    x = [1 if rnd() <= q[i] else 0 for i in range(M)]
+    x = [1 if random() <= q[i] else 0 for i in range(M)]
     logw = CALC_LOGW(x, p, q)
     w = 10**logw
     c = CALC_LOSS(x)
@@ -129,7 +126,7 @@ def NAIVE_MONTE_CARLO(Ns):
 
     for ns in range(Ns):
         if ns % 1000 == 0: print ns
-        x = [1 if rnd() < pi else 0 for pi in p]
+        x = [1 if random() < pi else 0 for pi in p]
         W[ns] = CALC_LOSS(x)
 
     return sum(W) / Ns

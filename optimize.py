@@ -5,8 +5,11 @@ import numpy as np
 from scipy.optimize import minimize, NonlinearConstraint
 from math import log10
 import matplotlib.pyplot as plt
-from util import READ_CSV_FILE, TO_STRING, RANDOM
 from time import time
+
+from util import *
+
+''' Implementation of Maximum Weight Minimization algorithm for Importance Sampling. '''
 
 
 def CALC_LOGP(x, p):
