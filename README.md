@@ -20,6 +20,3 @@ Simulation pipeline (dodecahedron and campus network examples):
 - Step 3: Go back to mwm.py, run IMPORTANCE_SAMPLING() using the IS distribution computed in the previous step to perform IS-based rare event simulation.
 
 The lattice examples use exponential tilting for proposal distributions and are implemented in separated Python scripts mwm_lattice.py and optimize_lattice.py.
-
-----------
-If you have trouble running the examples, please feel free to reach out to me at hnguye11(at)illinois(dot)edu or nhh311(at)gmail(dot)com. 
