@@ -1,19 +1,19 @@
-# Implementation of the Maximum Weight Minimization method for Rare Event Simulation
+## Implementation of the Maximum Weight Minimization method for Rare Event Simulation
 
 
-## Simulation examples:
+### Simulation examples:
 - Network reliability: dodecahedron network, lattice 20x20 network (undirected graph)
 - Loss tail probability: campus network with k=5 and k=9 user computers (directed graph)
 - Maximum flow: lattice 4x4 and 6x6 networks (directed graph)
 - Dynamic faule tree: hypothetical computer system example (HECS) x4 (fault tree)
 
 
-## Requirement:
+### Requirement:
 - Python3 with networkx, numpy, scipy, and matplotlib 
 - Optional: nauty (for generating the equivalence group partitioning)
 
 
-## Simulation pipeline:
+### Simulation pipeline:
 
 Each example is stored in a separate folder for ease of access. For example, to run the **maximum flow** simulation, go to the **maximum-flow** folder and follow these steps:
 
