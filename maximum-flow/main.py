@@ -96,7 +96,7 @@ def APPX_RE_SET(filename, Ts=500, Ns=500):
         x = SAMPLE_RE_SET()
         y = X_TO_GX(x)
 
-        if not x in X and not y in Y:
+        if not y in Y:
             X.append(x)
             Y.append(y)
 
