@@ -79,7 +79,7 @@ M1 = len(set(EG_IDX))
 
 ##################################################
 
-X = READ_CSV_FILE("Y_HECS4_%d.csv"%k)[:500]
+X = READ_CSV_FILE("Y_HCSE4_%d.csv"%k)[:500]
 X = [list(map(int, Xi)) for Xi in X]
 print("len X = %d"%len(X))
 
