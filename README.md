@@ -2,13 +2,13 @@
 
 
 ### Simulation examples:
-- Network reliability: dodecahedron network, lattice 20x20 network (undirected graph)
-- Loss tail probability: campus network with k=5 and k=9 user computers (directed graph)
-- Maximum flow: lattice 4x4 and 6x6 networks (directed graph)
-- Dynamic faule tree: hypothetical computer system example (HECS) x4 (fault tree)
+- Network reliability analysis: dodecahedron network, lattice 20x20 network (undirected graph)
+- Network security analysis: campus network with k=5 and k=9 user computers (directed graph)
+- Maximum flow analysis: lattice 4x4 and 6x6 networks (directed graph)
+- Faule tree analysis: hypothetical computer system example (HECS) x4 (dynamic fault tree)
 
 
-### Requirement:
+### Requirements:
 - Python3 with networkx, numpy, scipy, and matplotlib 
 - Optional: nauty (for generating the equivalence group partitioning)
 
